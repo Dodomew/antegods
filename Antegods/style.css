@@ -98,12 +98,12 @@ html, body
 
 #antegods-body-container
 {
-    width: 60%;
+    width: 50%;
     height: auto;
     margin: auto;
     color: rgb(255,139,121);
     /*font-family: 'Roboto Condensed', sans-serif;*/
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 1.5em;
     padding: 10px;
 }
@@ -135,7 +135,7 @@ html, body
 
 .antegods-media-container
 {
-    width: 70%;
+    width: 60%;
     height: auto;
     margin: auto;
     margin-bottom: 7.5%;
@@ -203,6 +203,7 @@ html, body
 {
     width: 100%;
     height: auto;
+    margin: auto;
 }
 
 #social-media
@@ -217,9 +218,123 @@ html, body
 
 #social-media img
 {
-    max-width: 512px !important;
-    width: 50%;
+    max-width: 256px !important;
+    width: 33.3%;
     height: auto;
     text-align: center;
-    padding-left: 25%;
+    padding-left: 33.3%;
+}
+
+
+#mc_embed_signup
+{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+     
+}
+
+#mc_embed_signup form 
+{
+    position: relative; 
+    text-align: center;
+    margin: auto;
+    background: rgb(18,13,10);
+    
+}
+ 
+#mc_embed_signup input 
+{ 
+    border: 1px solid rgb(255,139,121); 
+    -webkit-appearance: none; 
+    
+}
+
+#mc_embed_signup input[type=checkbox]
+{ 
+    -webkit-appearance: checkbox; 
+}
+
+#mc_embed_signup input[type=radio]
+{ 
+    -webkit-appearance: radio; 
+}
+
+#mc_embed_signup input:focus 
+{ 
+    border-color: rgb(255,139,121); 
+    
+}
+ 
+#mc_embed_signup .button 
+{
+  display: block;
+  position: relative;
+  background-color: rgb(255,139,121);
+  padding: 0;
+  margin: 0 auto;
+  border: 0 none;
+  border-radius: 6px; 
+  cursor: pointer;
+  font-size: 14px;
+  width: 140px;
+  height: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+    
+}
+
+#mc_embed_signup .button:hover 
+{ 
+    background-color: rgb(255,155,145);
+    
+}
+
+#mc_embed_signup .button:active 
+{ 
+    top: 2px; border-bottom-width: 1px;
+    
+}
+
+#mc_embed_signup label 
+{ 
+    width: 100%;
+    display: block; 
+    font-size: 2em; 
+    text-transform: uppercase; 
+    color: rgb(255,139,121); 
+    font-weight: bold;
+    margin: auto;   
+}
+
+#mc_embed_signup input.email 
+{
+    display: block;
+    position: relative;
+    padding: 8px 4px;
+    margin: 5% 0% 5% 22.5%;
+    text-indent: 6px;
+    font-size: 1.0em;
+    background: rgb(18,13,10);
+    font-weight: bold;
+    width: 55%;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: rgb(255,139,121);
+    
+    
+    
+}
+
+#mc_embed_signup input.email:focus 
+{ 
+  color: rgb(255,139,121);
+  background: rgb(18,13,10);
 }
