@@ -20,7 +20,8 @@ html, body
     list-style-type: none;
     margin: auto;
     overflow: hidden;
-    font-size: 30px;
+    font-size: 16px;
+    font-weight: bold;
     /*font-family: 'Roboto Condensed', sans-serif;*/
     
 }
@@ -28,6 +29,7 @@ html, body
 #header-menu li
 {
     float: left;
+    margin-right: 2.5%;
 }
 
 #header-menu li a
@@ -35,7 +37,7 @@ html, body
     display: block;
     color: rgb(255,139,121);
     text-align: center;
-    padding: 24px;
+    padding: 6px;
     text-decoration: none;
 }
 
@@ -66,7 +68,7 @@ html, body
 
 #antegods-logo
 {
-    width: 40%;
+    width: 30%;
     height: auto;
     margin: auto;
     position: relative;
@@ -83,14 +85,15 @@ html, body
 
 #antegods-body-logo
 {
-    width: 70%;
+    width: 30%;
     height: auto;
     margin: auto;
+    text-align: center;
 }
 
 #antegods-body-logo img
 {
-    width: 100%;
+    width: 75%;
     height: auto;
     margin: auto;
 }
@@ -98,7 +101,7 @@ html, body
 
 #antegods-body-container
 {
-    width: 50%;
+    width: 35%;
     height: auto;
     margin: auto;
     color: rgb(255,139,121);
@@ -106,6 +109,8 @@ html, body
     font-size: 1.5em;
     line-height: 1.5em;
     padding: 10px;
+    border-bottom: 2px solid;
+    border-bottom-color: rgb(112,61,54);
 }
 
 .videoWrapper 
@@ -135,11 +140,12 @@ html, body
 
 .antegods-media-container
 {
-    width: 60%;
+    position: relative;
+    width: 40%;
     height: auto;
     margin: auto;
-    margin-bottom: 7.5%;
-    margin-top: 7.5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 .antegods-media-container-text
@@ -148,8 +154,8 @@ html, body
     height: 5%;
     font-size: 40px;
     color: rgb(255,139,121);
-    border-bottom: 4px solid;
-    margin-bottom: 2.5%;
+    /*border-bottom: 2px solid;*/
+    margin-bottom: 5%;
 }
 
 .antegods-media-container-text h2
@@ -162,11 +168,10 @@ html, body
 {
     position: relative;
     height: auto;
-    display: inline-block;
-    width: 47.5%;
-    margin: auto;
-    padding-left: 1%;
-    padding-right: 1%;
+    /*display: inline-block;*/
+    width: 50%; /*47.5%*/
+    margin: 0 auto;
+    padding: 5%;
 }
 
 .media-container img
@@ -175,6 +180,21 @@ html, body
     height: auto;
 }
 
+.media-container-screenshots
+{
+    position: relative;
+    height: auto;
+    width: 42.5%;
+    display: inline-block;
+    margin: auto;
+    padding: 3.5%;
+}
+
+.media-container-screenshots img
+{
+    width: 100%;
+    height: auto;
+}
 /*.antegods-awards-position
 {
     position: relative;
@@ -189,13 +209,9 @@ html, body
 
 .antegods-awards-position
 {
-    position: relative;
+    float: left;
     width: 50%;
     height: auto;
-    margin: auto;
-    float: left;
-    padding-bottom: 7.55%;
-    padding-top: 7.5%;
 }
     /* <#2> ^ Deze code is voor even aantal images. Comment #1 en uncomment #2 */
 
@@ -213,16 +229,16 @@ html, body
     height: auto;
     margin: auto;
     float: left;
-    padding-bottom: 1%;
+    padding-bottom: 2.5%;
 }
 
 #social-media img
 {
     max-width: 256px !important;
-    width: 33.3%;
+    width: 50%;
     height: auto;
     text-align: center;
-    padding-left: 33.3%;
+    padding-left: 25%;
 }
 
 
@@ -337,4 +353,9 @@ html, body
 { 
   color: rgb(255,139,121);
   background: rgb(18,13,10);
+}
+
+.clear
+{
+    clear: both;
 }
