@@ -20,10 +20,9 @@ html, body
     list-style-type: none;
     margin: auto;
     overflow: hidden;
-    font-size: 18px;
+    font-size: 1vw;
     font-weight: bold;
     /*font-family: 'Roboto Condensed', sans-serif;*/
-    
 }
 
 #header-menu li
@@ -37,8 +36,8 @@ html, body
     display: block;
     color: rgb(255,139,121);
     text-align: center;
-    padding: 6px;
     text-decoration: none;
+    padding: 6px;
 }
 
 #header-menu li a:hover:not(.active)
@@ -46,9 +45,12 @@ html, body
     background-color: rgb(68,13,10);
 }
 
-.active
+#background-image-plus-logo
 {
-    background-color: beige;
+    width: 100%;
+    height: 50vw;
+    margin: auto;
+    margin-bottom: 10%;
 }
 
 #antegods-header-image
@@ -56,7 +58,7 @@ html, body
     width: 100%;
     height: auto;
     margin: auto;
-    position: relative;
+    position: absolute;
 }
 
 #antegods-header-image img
@@ -68,7 +70,7 @@ html, body
 
 #antegods-logo
 {
-    width: 30%;
+    width: 35%;
     height: auto;
     margin: auto;
     position: relative;
@@ -76,16 +78,31 @@ html, body
 
 #antegods-logo img
 {
-    position: absolute;
-    z-index: 10;
     width: 100%;
     height: auto;
-    margin-top: 2.5%;
+    margin: auto;
+}
+
+#antegods-logo h2
+{
+    text-align: center;
+    margin: auto;
+    font-size: 2vw;
+    color: aliceblue;
+}
+
+#antegods-logo h3
+{
+    text-align: center;
+    margin: auto;
+    margin: 1%;
+    font-size: 1.5vw;
+    color: aliceblue;
 }
 
 #antegods-body-logo
 {
-    width: 30%;
+    width: 80%;
     height: auto;
     margin: auto;
     text-align: center;
@@ -99,19 +116,27 @@ html, body
     margin: auto;
 }
 
-
 #antegods-body-container
 {
     width: 35%;
+    text-align: center;
     height: auto;
     margin: auto;
     color: rgb(255,139,121);
     /*font-family: 'Roboto Condensed', sans-serif;*/
-    font-size: 1.5em;
-    line-height: 1.5em;
+    font-size: 1.5vw;
+    line-height: 3vw;
     padding: 12px;
     border-bottom: 2px solid;
     border-bottom-color: rgb(112,61,54);
+}
+
+@media only screen and (max-width: 479px)
+{
+    #antegods-body-container
+    {
+        width: 90%;
+    }
 }
 
 .videoWrapper 
@@ -134,8 +159,8 @@ html, body
 .video-text
 {
     text-align: center;
-    width: 60%;
-    font-size: 1.5em;
+    width: 80%;
+    font-size: 2vw;
     color: rgb(255,139,121); 
     margin: auto;
 }
@@ -143,11 +168,11 @@ html, body
 .video-subtext
 {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.5vw;
     color: rgb(112,61,54);
     margin: auto;
-    width: 60%;
-    margin-top: -2.5%;
+    width: 80%;
+    margin-top: -5%;
 }
 
 .antegods-media-container
@@ -156,8 +181,6 @@ html, body
     width: 40%;
     height: auto;
     margin: auto;
-    margin-bottom: 2.5%;
-    margin-top: 2.5%;
 }
 
 .antegods-screenshot-container-parent
@@ -173,9 +196,10 @@ html, body
 {
     width: 100%;
     height: 5%;
-    font-size: 30px;
+    font-size: 2vw;
     color: rgb(255,139,121);
     margin-bottom: 2.5%;
+    margin-top: 2.5%;
     /*border-bottom: 2px solid;*/
 }
 
@@ -190,7 +214,7 @@ html, body
     position: relative;
     height: auto;
     /*display: inline-block;*/
-    width: 80%; /*47.5%*/
+    width: 90%; /*47.5%*/
     margin: 0 auto;
     padding: 2.5%;
 }
@@ -241,29 +265,45 @@ html, body
 
 .antegods-social-media-container
 {
-    position: relative;
     width: 40%;
-    margin: auto;
-    text-align: center;
-}
-
-#social-media
-{
-    position: relative;
-    width: 20%;
     height: auto;
     margin: auto;
-    display: inline-block;
+    margin-top: 5%;
 }
 
-#social-media img
+.social-media
+{
+    position: relative;
+    width: 33%;
+    height: auto;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    float: left;
+}
+
+.social-media h5
+{
+    font-size: 1.5vw;
+    margin: auto;
+    color: rgb(255,139,121);
+    float: left;
+    margin-left: 2.5%;
+}
+
+.social-media img
 {
     max-width: 256px !important;
     height: auto;
-    width: 50%;
-    text-align: center;
+    width: 15%;
+    float: left;
+    /*margin-left: 15%;*/
 }
 
+.social-media a
+{
+    text-decoration: none;
+}
 
 #mc_embed_signup
 {
@@ -271,8 +311,6 @@ html, body
     height: auto;
     margin: 0 auto;
     border-top: 2px solid rgb(112,61,54);
-    padding-bottom: 2.5%;
-     
 }
 
 #mc_embed_signup form 
@@ -286,31 +324,31 @@ html, body
 
 ::-webkit-input-placeholder 
 {
-    color: rgb(18,13,10);
+    color: rgb(255,139,121);
     text-align: center;
 }
  
 :-moz-placeholder 
 { /* Firefox old */
-    color: rgb(18,13,10);
+    color: rgb(255,139,121);
     text-align: center;
 }
  
 ::-moz-placeholder 
 { /* Firefox new */
-    color: rgb(18,13,10);
+    color: rgb(255,139,121);
     text-align: center;
 }
  
 :-ms-input-placeholder 
 {
-    color: rgb(18,13,10);
+    color: rgb(255,139,121);
     text-align: center;
 }
  
 #mc_embed_signup input 
 { 
-    border: 1px solid rgb(255,139,121); 
+    border: 0px solid rgb(255,139,121); 
     -webkit-appearance: none; 
     
 }
@@ -324,43 +362,29 @@ html, body
 { 
     -webkit-appearance: radio; 
 }
-
-#mc_embed_signup input:focus 
-{ 
-    border-color: rgb(255,139,121); 
-    
-}
  
 #mc_embed_signup .button 
 {
-  display: block;
-  position: relative;
-  background-color: rgb(255,139,121);
-  padding: 0;
-  margin: 0 auto;
-  border: 0 none;
-  border-radius: 6px; 
-  cursor: pointer;
-  font-size: 14px;
-  width: 160px;
-  height: 36px;
-  line-height: 36px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: top;
-    
+    display: block;
+    position: relative;
+    background-color: rgb(255,139,121);
+    padding: 0;
+    margin: 0 auto;
+    border: 0 none;
+    cursor: pointer;
+    font-size: 1.3vw;
+    width: 10vw;
+    height: auto;
+    line-height: 2.5vw;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;  
+    float: left;
 }
 
 #mc_embed_signup .button:hover 
 { 
-    background-color: rgb(255,155,145);
-    
-}
-
-#mc_embed_signup .button:active 
-{ 
-    top: 2px; border-bottom-width: 1px;
+    background-color: rgb(255,165,145);
     
 }
 
@@ -368,37 +392,39 @@ html, body
 { 
     width: 100%;
     display: block; 
-    font-size: 1.5em; 
+    font-size: 1.5vw; 
     color: rgb(255,139,121); 
     margin: auto;
     margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }
 
 #mc_embed_signup input.email 
 {
     display: block;
     position: relative;
-    padding: 8px 4px 8px 4px;
-    margin: 2.5% 0% 2.5% 22.5%;
-    font-size: 1.0em;
+    padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+    margin: auto;
+    font-size: 1.3vw;
     font-weight: bold;
-    width: 55%;
+    width: 50%;
+    height: auto;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     transition: all 0.2s linear;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    background-color: rgb(255,139,121);
+    background-color: rgb(112,61,54);
+    float: left;
+    margin-left: 10%;
+    margin-right: 2.5%;
 }
 
 #mc_embed_signup input.email:focus 
 { 
-  color: rgb(255,139,121);
-  background: rgb(18,13,10);
+    background: rgb(18,13,10);
+    color: rgb(255,139,121); 
 }
 
-.clear
+.clear-div
 {
     clear: both;
 }
@@ -406,9 +432,10 @@ html, body
 #trademark-text
 {
     text-align: center;
-    font-size: 16px;
+    font-size: 1.2vw;
     color: rgb(255,139,121);
     margin: auto;
+    margin-top: 2.5%;
 }
 
 .hvr-underline-from-center 
