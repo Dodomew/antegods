@@ -1,3 +1,4 @@
+/* Site gemaakt door Doortje Spanjerberg */
 html, body
 {
     width: 100%;
@@ -87,8 +88,8 @@ html, body
 {
     text-align: center;
     margin: auto;
-    font-size: 2vw;
-    color: aliceblue;
+    font-size: 2.5vw;
+    color: rgb(18,13,10);
 }
 
 #antegods-logo h3
@@ -96,8 +97,8 @@ html, body
     text-align: center;
     margin: auto;
     margin: 1%;
-    font-size: 1.5vw;
-    color: aliceblue;
+    font-size: 1vw;
+    color: rgb(18,13,10);
 }
 
 #antegods-body-logo
@@ -135,7 +136,8 @@ html, body
 {
     #antegods-body-container
     {
-        width: 90%;
+        width: 80%;
+        font-size: 2vw;
     }
 }
 
@@ -160,7 +162,7 @@ html, body
 {
     text-align: center;
     width: 80%;
-    font-size: 2vw;
+    font-size: 2.5vw;
     color: rgb(255,139,121); 
     margin: auto;
 }
@@ -168,7 +170,7 @@ html, body
 .video-subtext
 {
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 2vw;
     color: rgb(112,61,54);
     margin: auto;
     width: 80%;
@@ -234,18 +236,8 @@ html, body
     height: auto;
 
 }
-/*.antegods-awards-position
-{
-    position: relative;
-    width: 33.3%;
-    height: auto;
-    margin: auto;
-    float: left;
-    padding-bottom: 5%;
-}
-*/
-    /*<#1> ^Deze code is voor oneven aantal images. Uncomment #1 en comment #2 om te gebruiken */
-
+/* Deze code is voor oneven aantal images, in dit geval 3x3. Ale je deze
+wil gebruiken, uncomment deze code en comment de code hieronder uit. */
 .antegods-awards-position
 {
     float: left;
@@ -254,7 +246,18 @@ html, body
     margin-bottom: 5%;
     margin-top: 5%;
 }
-    /* <#2> ^ Deze code is voor even aantal images. Comment #1 en uncomment #2 */
+
+/* Deze code is voor 2x2 images. Dus als je een even aantal images hebt,
+dan uncomment je deze en comment je de code hierboven uit.
+.antegods-awards-position
+{
+    float: left;
+    width: 50%;
+    height: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+*/
 
 .antegods-awards-position img
 {
@@ -266,7 +269,7 @@ html, body
 .antegods-social-media-container
 {
     width: 40%;
-    height: auto;
+    height: 2.5%;
     margin: auto;
     margin-top: 5%;
 }
